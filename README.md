@@ -35,8 +35,8 @@ In this workshop, we will cover the following:
  * Try out some other shapes
 
  #### Basic shapes
- | |
- ----
+ |    |
+ |----|
  | line(x1, y1, x2, y2) |
  | ellipse(x, y, width, height) |
  | rect(x, y, width, height)	|
@@ -52,8 +52,8 @@ In this workshop, we will cover the following:
  * Each command is followed by three numbers, the RGB colour, that represent the colour in terms of its primary colours: red, green and blue
  * Each colour can have a value between 0 and 255 of each of the primary colours
 
- | |
- ----
+ |    |
+ |----|
  | fill(r,g,b) |
  | stroke(r,g,b) |
  |  |
