@@ -89,7 +89,7 @@ In this workshop, we will cover the following:
  The word **integer** means a whole number.
  To declare and use an integer variable, try the following code:
  - `int eyeDiameter = 30;`
- - `ellipse(50,50, eyeDiameter, eyeDiameter;`
+ - `ellipse(50,50, eyeDiameter, eyeDiameter);`
 
 
  To declare and use a colour variable, try the following code:
@@ -98,7 +98,7 @@ In this workshop, we will cover the following:
  - Note: the spelling to use is the American spelling `color`
  - Remember that to see this colour, we need to follow this code with something to apply the colour to!
 
- Variables names are very important. Well-named variables make code easier to read and understand, while poorly named variables can have the opposite effect. If you take care to name your variables well, you will make it easier for yourself to update your code at a later date. Remeber, it might not always be you who has to update the code!
+ Variables names are important because well-named variables make code easier to read and understand, while poorly named variables can have the opposite effect. If you take care to name your variables well, you will make it easier on yourself when you come to edit your code. The moment you want to collaborate, share your code or get help debugging, other people also now need to read and understand what you've written. So remember, name things clearly as it might not always be you who has to update the code!
  
  Try to make the names of your variables meaningful. It is better to have a longer more meaningful name like `pink` than an abbreviation like `p` that you might forget the meaning of later.
 
@@ -106,7 +106,7 @@ In this workshop, we will cover the following:
  - Create some variables to replace some values in your code
  - Use both colours and integers
  - Try to name your variables so that their purpose is clear
- - **CHALLENGE**: Can you create a variable that allows you to easily change if your characteer's eyes look up or down?
+ - **CHALLENGE**: Can you create a variable that allows you to easily change if your character's eyes look up or down?
 
  ### Adding interactivity
  To get your code to move, start by setting up two sections
@@ -126,9 +126,13 @@ In this workshop, we will cover the following:
  - Put your code into two sections
  - Replace one or two variables with mouseX or mouseY
  - What happens?
- - **CHALLENGE!**: Can you get your character's eyes to follow                 the mouse movements?
+ - **CHALLENGE!**: Can you get your character's eyes to follow the mouse movements?
 
-
+ ### Use the example code: meet Owly!
+ 
+ If you are having trouble understanding or applying some of the concepts covered so far, try taking a look at the example character [Owly](owly.txt).
+ 
+ 
  ## Wrap Up
 
  - In this workshop, we covered the basics of how to create shapes and sketches using the Processing language.
