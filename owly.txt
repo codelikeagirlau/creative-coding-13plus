@@ -1,49 +1,93 @@
+///////////////////////////////////////////////////
+//                                               //
+//                   OWLY                        //
+//                                               //
+//    This is a Processing sketch of a little    //
+//    pink owl. It has moving eyes that follow   //
+//    the movements of the mouse cursor.         //
+//                                               //
+///////////////////////////////////////////////////
+
+// Fixed variables
 int pupilDiameter = 25;
+color babyPink = color(249,206,215);
+color beakOrange = color(255,200,100);
+
+// Variables to update with mouse cursor input
 int pupilPositionY = 53;
 
-color babyPink = color(249,206,215);
+///////////////////////////////////////////////////
+// Initial setup, which will run only once       //
+///////////////////////////////////////////////////
 
 void setup() {
-  size(500, 500); 
+
+  // set canvas size
+  size(150, 160); 
 };
 
+
+///////////////////////////////////////////////////
+// Repeating code, which is continuously redrawn //
+///////////////////////////////////////////////////
 void draw() {
+
   background(babyPink);
   
-  //left ear
+  //////////////////////
+  //     OWL BODY     //
+  //////////////////////
+  
   fill(babyPink);
+  
+  // left ear
   triangle(30,30,55,35,35,65);
-  //right ear
+  
+  // right ear
   triangle(120,30,100,35,115,65);
   
-  //body
+  // body
   ellipse(75,80,100,110);
   
-  // LEFT EYE WHITE
+  //////////////////////
+  // EYES: White bits //
+  //////////////////////
+  
   fill(255,255,255);
+  
+  // left eye white
   ellipse(60,50,pupilDiameter, pupilDiameter);
   
-  // RIGHT EYE WHITE
-  fill(255,255,255);
+  // right eye white
   ellipse(90,50,pupilDiameter, pupilDiameter);
   
-  // BEAK
-  fill(255,200,100);
+  //////////////////////
+  //       BEAK       //
+  //////////////////////
+  
+  fill(beakOrange);
   triangle(70,55,80,55,75,65);
 
+
+  ///////////////////////
+  // EYES: Moving bits //
+  ///////////////////////
+  
   pupilPositionY = mouseY;
   
-  // LEFT EYE
+  // left eye
+  
   fill(255,255,255);
-  ellipse(90,50,pupilDiameter, pupilDiameter);
+  ellipse(90,50,pupilDiameter,pupilDiameter);
   fill(0,0,0);
   ellipse(60,pupilPositionY,15,15);
   fill(255,255,255);
   ellipse(58,pupilPositionY - 5,5,5);
   
-  // RIGHT EYE
+  // right eye
+  
   fill(255,255,255);
-  ellipse(90,50,pupilDiameter, pupilDiameter);
+  ellipse(90,50,pupilDiameter,pupilDiameter);
   fill(0,0,0);
   ellipse(90,pupilPositionY,15,15);
   fill(255,255,255);
